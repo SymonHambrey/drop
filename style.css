@@ -1,0 +1,164 @@
+:root {
+    --header-footer: #2C3B41;
+    --header-footer-trans: #2C3B4160;
+    --hlight-dark: #4E5D63;
+    --main-bg: #BBB;
+    --green: #86AE26;
+    --trans-green: #86AE2650;
+    --dark-green: #506917;
+    --orange: #B5771F;
+    --dark-orange: #7D4E0B;
+    --gold: #DA9100;
+    --blue: #257EA0;
+    --dark-blue: #1C5F78;
+    --red: #CC0000;
+    --dark-red: #AA0000;
+    --trans-red: #FF000050;
+    --transparent: #00000000;
+}
+
+html, body {
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: var(--header-footer);
+    font-family: 'muli', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #DDD;
+}
+
+.btn-icon {
+    margin: 5px;
+    font-size: 2em;
+}
+
+.btn-icon:hover {
+    cursor: pointer;
+}
+
+.standard-text {
+    margin: 5px;
+    line-height: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* GAME SCREEN OPTIONS */
+
+.row {
+    display: inline-flex;
+    width: 100%;
+}
+
+#game_screen {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 10% auto;
+}
+
+/* INFO AREA OPTIONS */
+#info_area {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#game_title {
+    font-size: 2em;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.score_area {
+    width: 150px;
+    height: 1.5em;
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 5px auto;
+}
+
+#next_number {
+    width: 50px;
+    height: 1.5em;
+    border: 1px solid #DDD;
+    border-radius: 16px; 
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 5px;
+}
+
+#pause_button {
+    margin: 5px auto;
+}
+
+#pause_button:hover {
+    color: var(--blue);
+}
+
+#exit_button:hover {   
+    color: var(--red);
+}
+
+/* GAME AREA OPTIONS */
+
+.indicator-box {
+    border: 1px solid #DDD;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+    background: 
+        linear-gradient(-140deg, transparent 60%, var(--header-footer) 65%),
+        linear-gradient(140deg, transparent 60%, var(--header-footer) 65%),
+        linear-gradient(to top, var(--hlight-dark), var(--header-footer));
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.game-column {
+    border: 1px solid #DDD;
+    width: 58px;
+    height: 348px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.game-column:hover {
+    cursor: pointer;
+    background-color: #4E5D63;
+}
+
+.number-box {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    z-index: 10;
+    line-height: 18px;
+    box-shadow: inset 0 -4px 0 #00000050; 
+    transition-duration: 10s;
+}
+
+.number-box p {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+.slide {
+
+}
