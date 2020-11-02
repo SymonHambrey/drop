@@ -113,7 +113,7 @@ html, body {
 }
 
 /* GAME AREA OPTIONS */
-
 #game_canvas {
     background-image: url('./game_board.png');
+    cursor: pointer;
 }
